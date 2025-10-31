@@ -1,0 +1,81 @@
+/* vacancy page */
+.vacancy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.vacancy-card {
+  padding: 4rem 6rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  border-bottom: 0.2rem inset #4caf50;
+}
+
+.vacancy-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.vacancy-card h3 {
+  /* display: inline-block; */
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+
+  border-bottom: 0.2rem inset #4caf50;
+}
+
+.vacancy-card p {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+/* ######### */
+.more-content {
+  display: none;
+  margin-block: 1rem 4rem;
+}
+
+.more-content ul {
+  margin-bottom: 2rem;
+  list-style: square;
+  padding-left: 4rem;
+}
+
+.more-content ul li::marker {
+  color: var(--text);
+}
+
+strong {
+  margin-right: 0.5rem;
+}
+
+.vacancy-card.expanded .more-content {
+  display: block;
+}
+
+.toggle-btn {
+  transition: background 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.toggle-btn:disabled {
+  color: var(--accent);
+  background-color: transparent;
+  cursor: auto;
+}
+
+/* almost same vacancy, about, clients, product */
+#vacancy {
+  padding: 8rem 0;
+}
+
+#vacancy > .container {
+  margin-bottom: 12rem;
+}

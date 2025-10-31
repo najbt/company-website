@@ -1,0 +1,29 @@
+.medicine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding-block: 4rem;
+}
+
+.medicine-item {
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.medicine-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* almost same vacancy, about, clients, product */
+#products {
+  margin-top: 0 !important;
+  padding: 8rem 0;
+}
+
+.base-img {
+  object-position: 20% 70%;
+}

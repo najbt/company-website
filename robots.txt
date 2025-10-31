@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grifonpharma.netlify.app/sitemap.xml
