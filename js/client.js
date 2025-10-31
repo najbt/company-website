@@ -1,11 +1,9 @@
 "use strict";
 
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-const supabaseUrl = "https://bhjsgqxriirwphjkqssp.supabase.co";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "../supabaseConfig.js";
 
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJoanNncXhyaWlyd3Boamtxc3NwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg4NTA4ODMsImV4cCI6MjA2NDQyNjg4M30.FsFVagdzaLnLBV3avfVStKU6TZiSVIFRkq-62TUMDuA";
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Shared client images (static)
